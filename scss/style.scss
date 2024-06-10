@@ -50,8 +50,9 @@ a {
 	transition: .3s all;
 	color: $new;
 	&:hover, &:focus, &:active {
-		color: darken($primary, 5%);
+		background-color: darken($new, 35%) !important;
 		text-decoration: none;
+		color: white !important;
 	}
 }
 
@@ -59,6 +60,15 @@ a {
 	color: #64c9a6 !important;
 }
 
+#myBtn {
+	color: #64c9a6;
+	background: #333;
+}
+
+#myBtn:hover {
+	background-color: #205b46;
+	color: white;
+}
 
 .parent-nav-link-padding {
 	padding: 15px 20px!important;
@@ -364,14 +374,16 @@ a {
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: .2rem;
+	border: none;
 	&:active, &:focus {
 		outline: none;
 		box-shadow: none!important;
 	}
 	&.btn-primary {
-		color: $white;
+		color: $black !important;
 		&:hover, &:active, &:focus {
-			background: darken($primary, 5%);
+			color: white !important;
+			background: darken($primary, 35%) !important;
 		}
 	}
 }
@@ -740,6 +752,12 @@ a {
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		
+	}
+	.social-item:hover {
+		transform: scale(1.2); /* Increases the size of the icon on hover */
+        transition: transform 0.3s ease; /* Adds a smooth transition effect */
+
 	}
 }
 

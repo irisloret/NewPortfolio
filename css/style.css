@@ -53,12 +53,23 @@ a {
   color: #64c9a6;
 }
 a:hover, a:focus, a:active {
-  color: #51c29b;
+  background-color: #205b46 !important;
   text-decoration: none;
+  color: white !important;
 }
 
 .test {
   color: #64c9a6 !important;
+}
+
+#myBtn {
+  color: #64c9a6;
+  background: #333;
+}
+
+#myBtn:hover {
+  background-color: #205b46;
+  color: white;
 }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
@@ -317,16 +328,18 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.2rem;
+  border: none;
 }
 .btn:active, .btn:focus {
   outline: none;
   box-shadow: none !important;
 }
 .btn.btn-primary {
-  color: #ffffff;
+  color: #000000 !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  background: #51c29b;
+  color: white !important;
+  background: #205b46 !important;
 }
 
 .progress {
@@ -677,6 +690,10 @@ a:hover, a:focus, a:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.site-footer .social-item:hover {
+  transform: scale(1.2); /* Increases the size of the icon on hover */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect */
 }
 
 .block-47 .block-47-image {
